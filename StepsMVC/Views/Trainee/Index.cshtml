@@ -1,0 +1,19 @@
+﻿@model List<Trainee>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+@foreach (Trainee Trainee in Model)
+{
+
+    <h3>@Trainee.Id</h3>
+    <h3>@Trainee.Name</h3>
+    <h3>@Trainee.Address</h3>
+    <h3>@Trainee.Grade</h3>
+    <h3>@Trainee.ImageUrl</h3>
+    <hr />
+}
+

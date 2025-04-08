@@ -1,0 +1,11 @@
+﻿@model List<Instructor>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Show All Instructors</h1>
+@foreach (Instructor instructor in Model)
+{
+    <h3>@instructor.Name</h3>
+}
+
